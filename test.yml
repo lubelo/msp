@@ -1,0 +1,5 @@
+---
+- name: test for sapher
+  hosts: all
+  tasks:
+     - ping:
