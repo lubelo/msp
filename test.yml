@@ -1,4 +1,9 @@
 ---
--  hosts: all
-   tasks:
-     - ping:
+- name: Ping Testing
+  hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+   - name: Testing ping
+     ansible.builtin.ping:
+      
